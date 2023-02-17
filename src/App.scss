@@ -1,0 +1,42 @@
+
+@import "./../node_modules/bootstrap/scss/functions";
+@import "./../node_modules/bootstrap/scss/variables";
+
+$primary: $red-300;
+
+@import './../node_modules/bootstrap/scss/bootstrap.scss';
+
+
+// ............................
+
+html {
+  width:100vw;
+  overflow-x:hidden;
+}
+
+*{
+  font-family: 'Consolas';
+}
+
+.btn-accent{
+  --bs-btn-color: #e48d97;
+  --bs-btn-hover-color: #ea9ca5;
+  --bs-btn-active-color: #e48d97;
+
+  &-show{
+    --bs-btn-color: #a6777c;
+    --bs-btn-hover-color: #a6777c;
+    --bs-btn-active-color: #a6777c;
+  }
+}
+
+.custom-checkbox:checked {
+  background-color: #ea9ca5;
+  border-color: #ea9ca5;
+}
+
+.custom-checkbox:focus {
+  box-shadow: 0 0 0 0.25rem rgba(234, 156, 165, 0.544);
+  outline: none !important;
+  border-color: #ea8b96;
+}
